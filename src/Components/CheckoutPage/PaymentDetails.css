@@ -1,0 +1,92 @@
+.cart_body{
+    width: 350px;
+    height: max-content;
+    padding:20px 10px 15px 20px ;
+    margin:10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    right: 150px;
+    top: 20%;
+}
+
+.image_box img{
+width: 90px;
+}
+.cart_title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.image_titlename{
+    font-size:17px ;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+.address{
+    font-size: small;
+    color: gray;
+    position: relative;
+    bottom: 15px;
+}
+.applynow {
+    padding: 13px;
+    outline:none;
+    border:none;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    margin-left: 90px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 4px dashed #fc8019;
+    color: #fc8019;
+    background-color: rgba(211, 211, 211, 0.292);
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.applynow:hover{
+    border: 4px dashed #fc8019;
+    color: whitesmoke;
+    background-color: #fc8019;
+}
+.billdetails{
+    font-size: small;
+    font-weight: 600;
+}
+.itemdetails{
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total_pay_for_user{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    padding-top: 10px;
+
+}
+.amount{
+    color: #60b246;
+    font-weight: 500;
+}
+.coupon_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.coupon_img img{
+    width: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
