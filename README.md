@@ -8,8 +8,8 @@ Swiggy is an Indian online food ordering and delivery platform. Founded in July 
 
 # Step 1: **Launch EC2 (Ubuntu):**
 
-- Provision an EC2 instance on AWS with Ubuntu AMI and Instance type t2.large & with 30GB storage.
-- create IAM Role with Administrator permissions and Attach to EC2-Instance
+- Provision an EC2 instance on AWS with Ubuntu AMI and `Instance type t2.large & with 30GB storage`
+- create IAM Role with `Administrator permissions` and Attach to EC2-Instance
 - Connect to the instance using SSH.
 
 # **Step 2: Clone the Code:**
@@ -27,7 +27,7 @@ sudo su
     ```
     
 # **Step 3: Install Jenkins on EC2-Instance using shell script:**
-- vi script1.sh
+- `vi script1.sh`
 
 ```
 #!/bin/bash
@@ -47,8 +47,8 @@ sudo apt-get update -y
 sudo apt-get install jenkins -y
 sudo systemctl start jenkins
 ```
-- sudo chmod 777 script1.sh
-- sh script.sh
+- `sudo chmod 777 script1.sh`
+- `sh script.sh`
 
 # **Step 5: Install Docker:**
 
@@ -60,7 +60,7 @@ newgrp docker
 sudo chmod 777 /var/run/docker.sock
 
 ```
-- docker --version
+- `docker --version`
 
 # **Step 6: Run Sonarqube Container:**
 
@@ -72,7 +72,7 @@ docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 - connect to Sonarqube using EC2-Instance PublicIP:port9000     EX: 10.0.0.0:9000
 
 # **Step 7: Intall Trivy, AWSCLI, Terraform using shell script:**
-- vi script2.sh
+- `vi script2.sh`
   
 ```
 # Install Trivy
@@ -93,8 +93,8 @@ unzip awscliv2.zip
 sudo ./aws/install
 ```
 
-- sudo chmod 777 script2.sh
-- sh script2.sh
+- `sudo chmod 777 script2.sh`
+- `sh script2.sh`
 
 
 
