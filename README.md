@@ -50,7 +50,7 @@ sudo systemctl start jenkins
 - `sudo chmod 777 script1.sh`
 - `sh script.sh`
 
-# **Step 5: Install Docker:**
+# **Step 4: Install Docker:**
 
 ```
 sudo apt-get update
@@ -62,7 +62,7 @@ sudo chmod 777 /var/run/docker.sock
 ```
 - `docker --version`
 
-# **Step 6: Run Sonarqube Container:**
+# **Step 5: Run Sonarqube Container:**
 
 ```
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
@@ -71,7 +71,7 @@ docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 - docker ps -a  : To list all the running containers
 - connect to Sonarqube using EC2-Instance PublicIP:port9000     EX: 10.0.0.0:9000
 
-# **Step 7: Intall Trivy, AWSCLI, Terraform using shell script:**
+# **Step 6: Intall Trivy, AWSCLI, Terraform using shell script:**
 - `vi script2.sh`
   
 ```
